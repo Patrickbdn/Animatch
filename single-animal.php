@@ -6,7 +6,7 @@
     <?php the_field('animal_birthday'); ?>
 </div>
 <div>
-    <img src="<?php the_sub_field('picture'); ?>" /> 
+    <img src="<?php the_field('photo_de_lanimal'); ?>" /> 
 </div>
 <?php echo get_the_date(); ?>
 
