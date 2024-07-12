@@ -8,13 +8,19 @@ Version: 1.5
 */@font-face{font-family:ExempleFont;src:url(assets/fonts/font.woff2) format("woff2")}
 
 .image-reduite {
-    max-width: 300px; /* Réduit la largeur de l'image à 30% de son conteneur parent */
-    height: auto; /* Assure que les proportions de l'image sont conservées */
-    /* Ajoutez d'autres styles si nécessaire */
+    max-width: 100%;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    display: inline;
+}
+
 }
 body{
-    background-size: cover;
+    background-size: cover;/* pour afficher l'image de couverture*/
     background-position: center;
-    color: white;}
+    color: rgb(95, 26, 214);}*/afficher le texte dans la couleur
 
 header {color: white;}
+.custom-image {width: 300px;height: 200px;}
+
