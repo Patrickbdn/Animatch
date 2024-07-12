@@ -14,5 +14,6 @@ Version: 1.5
 }
 body{
     background-size: cover;
-    background-position: center;
-}
+    background-position: center;}
+
+header {    color: white;}
