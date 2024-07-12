@@ -14,12 +14,12 @@ Version: 1.5
     height: auto;
     display: inline;
 }
+.titre {color: rgb(95, 26, 214);}/*afficher le texte dans la couleur*/
 
-}
 body{
     background-size: cover;/* pour afficher l'image de couverture*/
     background-position: center;
-    color: rgb(95, 26, 214);}*/afficher le texte dans la couleur
+    color: rgb(95, 26, 214);}/*afficher le texte dans la couleur*/
 
 header {color: white;}
 .custom-image {width: 300px;height: 200px;}

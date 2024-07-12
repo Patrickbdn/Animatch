@@ -1,8 +1,8 @@
 <?php get_header() ?>
 
 <header> 
-    <h1> <?php the_field('home__header_title'); ?> </h1>
-    <p> <?php the_field('home__header_subtitle'); ?> 
+    <h1 class="titre"> <?php the_field('home__header_title'); ?> </h1>
+    <p class="titre"> <?php the_field('home__header_subtitle'); ?> 
 
      
 </header>
