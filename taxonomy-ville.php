@@ -1,8 +1,11 @@
 <?php get_header(); ?>
 <?php $term = get_queried_object(); ?>
 
-<h1><?php single_term_title(); ?></h1>
-<img src="<?php the_field('ville_illustration', $term); ?>" class="custom-image" />
+<div style="text-align: center;">
+    <h1><?php single_term_title(); ?></h1>
+</div>
+<img src="<?php the_field('ville_illustration', $term); ?>" class="ville" />
+
 
 
 <?php if(have_posts()) : ?>
@@ -13,7 +16,7 @@
      <?php the_field('animal_birthday'); ?>
     </a>
      <div>
-          <img src="<?php the_field('photo_de_lanimal'); ?>"" class="custom-image" /> 
+          <img src="<?php the_field('photo_de_lanimal'); ?>" class="custom-image" /> 
      </div>
 
      <?php endwhile; ?>
