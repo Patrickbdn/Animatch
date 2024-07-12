@@ -1,0 +1,18 @@
+/*!
+Theme Name: Theme boilerplate
+Theme URI: https://github.com/melvinlemoine/WordPress-theme-boilerplate
+Author: Melvin Lemoine
+Author URI: https://melvin.studio
+Description: Let's create a new theme !
+Version: 1.5
+*/@font-face{font-family:ExempleFont;src:url(assets/fonts/font.woff2) format("woff2")}
+
+.image-reduite {
+    max-width: 30%; /* Réduit la largeur de l'image à 30% de son conteneur parent */
+    height: auto; /* Assure que les proportions de l'image sont conservées */
+    /* Ajoutez d'autres styles si nécessaire */
+}
+body{
+    background-size: cover;
+    background-position: center;
+}
