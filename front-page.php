@@ -6,8 +6,7 @@
 
      
 </header>
-<body
-style="background-image: url('<?php the_field('home__header_wallpaper'); ?>')">
+<body style="background-image: url('<?php the_field('home__header_wallpaper'); ?>')">
 
 
     <?php if(have_rows('home__header_animaux')) : ?>
@@ -17,30 +16,18 @@ style="background-image: url('<?php the_field('home__header_wallpaper'); ?>')">
         <?php the_sub_field('name'); ?>
         <img src="<?php the_sub_field('picture'); ?>" class="image-reduite"/> 
 
-
+        <?php $button_group = get_field('bouton');
+                    if( $button_group ): ?>
+                    <div class="button-container">
+                        <a href="<?php echo esc_url( $button_group['lien_du_bouton'] ); ?>" class="button">
+                        <?php echo esc_html( $button_group['titre_du_bouton'] ); ?>
+                        </a>
+                    </div>
+                <?php endif; ?>
         <?php endwhile; ?>
         <?php else : ?>
             <p> Aucun nouvel animal aujourd'hui </p>
     <?php endif; ?>   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </body>
+</body>
 
 <?php get_footer() ?>

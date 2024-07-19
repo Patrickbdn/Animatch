@@ -1,0 +1,28 @@
+/*!
+Theme Name: Theme boilerplate
+Theme URI: https://github.com/melvinlemoine/WordPress-theme-boilerplate
+Author: Melvin Lemoine
+Author URI: https://melvin.studio
+Description: Let's create a new theme !
+Version: 1.5
+*/@font-face{font-family:ExempleFont;src:url(assets/fonts/font.woff2) format("woff2")}
+
+.image-reduite {
+    max-width: 100%;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    display: inline;
+}
+.titre {color: rgb(95, 26, 214);}/*afficher le texte dans la couleur*/
+
+.ville {width: 100%;height: 300px;}
+
+body{
+    background-size: cover;/* pour afficher l'image de couverture*/
+    background-position: center;
+    color: rgb(95, 26, 214);}/*afficher le texte dans la couleur*/
+
+header {color: white;}
+.custom-image {width: 300px;height: 200px;}
+
