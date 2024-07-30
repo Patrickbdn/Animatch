@@ -2,7 +2,7 @@
 body {
   background-size: cover;
   background-position: center;
-  color: rgb(95, 26, 214);
+  color: rgb(245, 245, 246);
 }
 
 .image-reduite {
@@ -14,7 +14,7 @@ body {
 }
 
 .titre {
-  color: rgb(95, 26, 214);
+  color: rgb(17, 250, 227);
 }
 
 .ville {

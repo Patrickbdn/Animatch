@@ -557,50 +557,51 @@ add_action('acf/include_fields', function () {
 	));
 });
 
-function cptui_register_my_cpts() {
+function cptui_register_my_cpts()
+{
 
 	/**
 	 * Post Type: animaux.
 	 */
 
 	$labels = [
-		"name" => esc_html__( "animaux", "custom-post-type-ui" ),
-		"singular_name" => esc_html__( "animal", "custom-post-type-ui" ),
-		"menu_name" => esc_html__( "Mes animaux", "custom-post-type-ui" ),
-		"all_items" => esc_html__( "Tous les animaux", "custom-post-type-ui" ),
-		"add_new" => esc_html__( "Ajouter un nouveau", "custom-post-type-ui" ),
-		"add_new_item" => esc_html__( "Ajouter un nouvel animal", "custom-post-type-ui" ),
-		"edit_item" => esc_html__( "Modifier animal", "custom-post-type-ui" ),
-		"new_item" => esc_html__( "Nouvel animal", "custom-post-type-ui" ),
-		"view_item" => esc_html__( "Voir animal", "custom-post-type-ui" ),
-		"view_items" => esc_html__( "Voir animaux", "custom-post-type-ui" ),
-		"search_items" => esc_html__( "Recherche de animaux", "custom-post-type-ui" ),
-		"not_found" => esc_html__( "Aucun animaux trouvé", "custom-post-type-ui" ),
-		"not_found_in_trash" => esc_html__( "Aucun animaux trouvé dans la corbeille", "custom-post-type-ui" ),
-		"parent" => esc_html__( "animal parent :", "custom-post-type-ui" ),
-		"featured_image" => esc_html__( "Image mise en avant pour ce animal", "custom-post-type-ui" ),
-		"set_featured_image" => esc_html__( "Définir l’image mise en avant pour ce animal", "custom-post-type-ui" ),
-		"remove_featured_image" => esc_html__( "Retirer l’image mise en avant pour ce animal", "custom-post-type-ui" ),
-		"use_featured_image" => esc_html__( "Utiliser comme image mise en avant pour ce animal", "custom-post-type-ui" ),
-		"archives" => esc_html__( "Archives de animal", "custom-post-type-ui" ),
-		"insert_into_item" => esc_html__( "Insérer dans animal", "custom-post-type-ui" ),
-		"uploaded_to_this_item" => esc_html__( "Téléverser sur ce animal", "custom-post-type-ui" ),
-		"filter_items_list" => esc_html__( "Filtrer la liste de animaux", "custom-post-type-ui" ),
-		"items_list_navigation" => esc_html__( "Navigation de liste de animaux", "custom-post-type-ui" ),
-		"items_list" => esc_html__( "Liste de animaux", "custom-post-type-ui" ),
-		"attributes" => esc_html__( "Attributs de animaux", "custom-post-type-ui" ),
-		"name_admin_bar" => esc_html__( "animal", "custom-post-type-ui" ),
-		"item_published" => esc_html__( "animal publié", "custom-post-type-ui" ),
-		"item_published_privately" => esc_html__( "animal publié en privé.", "custom-post-type-ui" ),
-		"item_reverted_to_draft" => esc_html__( "animal repassé en brouillon.", "custom-post-type-ui" ),
-		"item_trashed" => esc_html__( "animal mis à la corbeille.", "custom-post-type-ui" ),
-		"item_scheduled" => esc_html__( "animal planifié", "custom-post-type-ui" ),
-		"item_updated" => esc_html__( "animal mis à jour.", "custom-post-type-ui" ),
-		"parent_item_colon" => esc_html__( "animal parent :", "custom-post-type-ui" ),
+		"name" => esc_html__("animaux", "custom-post-type-ui"),
+		"singular_name" => esc_html__("animal", "custom-post-type-ui"),
+		"menu_name" => esc_html__("Mes animaux", "custom-post-type-ui"),
+		"all_items" => esc_html__("Tous les animaux", "custom-post-type-ui"),
+		"add_new" => esc_html__("Ajouter un nouveau", "custom-post-type-ui"),
+		"add_new_item" => esc_html__("Ajouter un nouvel animal", "custom-post-type-ui"),
+		"edit_item" => esc_html__("Modifier animal", "custom-post-type-ui"),
+		"new_item" => esc_html__("Nouvel animal", "custom-post-type-ui"),
+		"view_item" => esc_html__("Voir animal", "custom-post-type-ui"),
+		"view_items" => esc_html__("Voir animaux", "custom-post-type-ui"),
+		"search_items" => esc_html__("Recherche de animaux", "custom-post-type-ui"),
+		"not_found" => esc_html__("Aucun animaux trouvé", "custom-post-type-ui"),
+		"not_found_in_trash" => esc_html__("Aucun animaux trouvé dans la corbeille", "custom-post-type-ui"),
+		"parent" => esc_html__("animal parent :", "custom-post-type-ui"),
+		"featured_image" => esc_html__("Image mise en avant pour ce animal", "custom-post-type-ui"),
+		"set_featured_image" => esc_html__("Définir l’image mise en avant pour ce animal", "custom-post-type-ui"),
+		"remove_featured_image" => esc_html__("Retirer l’image mise en avant pour ce animal", "custom-post-type-ui"),
+		"use_featured_image" => esc_html__("Utiliser comme image mise en avant pour ce animal", "custom-post-type-ui"),
+		"archives" => esc_html__("Archives de animal", "custom-post-type-ui"),
+		"insert_into_item" => esc_html__("Insérer dans animal", "custom-post-type-ui"),
+		"uploaded_to_this_item" => esc_html__("Téléverser sur ce animal", "custom-post-type-ui"),
+		"filter_items_list" => esc_html__("Filtrer la liste de animaux", "custom-post-type-ui"),
+		"items_list_navigation" => esc_html__("Navigation de liste de animaux", "custom-post-type-ui"),
+		"items_list" => esc_html__("Liste de animaux", "custom-post-type-ui"),
+		"attributes" => esc_html__("Attributs de animaux", "custom-post-type-ui"),
+		"name_admin_bar" => esc_html__("animal", "custom-post-type-ui"),
+		"item_published" => esc_html__("animal publié", "custom-post-type-ui"),
+		"item_published_privately" => esc_html__("animal publié en privé.", "custom-post-type-ui"),
+		"item_reverted_to_draft" => esc_html__("animal repassé en brouillon.", "custom-post-type-ui"),
+		"item_trashed" => esc_html__("animal mis à la corbeille.", "custom-post-type-ui"),
+		"item_scheduled" => esc_html__("animal planifié", "custom-post-type-ui"),
+		"item_updated" => esc_html__("animal mis à jour.", "custom-post-type-ui"),
+		"parent_item_colon" => esc_html__("animal parent :", "custom-post-type-ui"),
 	];
 
 	$args = [
-		"label" => esc_html__( "animaux", "custom-post-type-ui" ),
+		"label" => esc_html__("animaux", "custom-post-type-ui"),
 		"labels" => $labels,
 		"description" => "",
 		"public" => true,
@@ -619,31 +620,32 @@ function cptui_register_my_cpts() {
 		"map_meta_cap" => true,
 		"hierarchical" => true,
 		"can_export" => false,
-		"rewrite" => [ "slug" => "animal", "with_front" => true ],
+		"rewrite" => ["slug" => "animal", "with_front" => true],
 		"query_var" => true,
 		"menu_icon" => "dashicons-admin-site",
-		"supports" => [ "title", "page-attributes" ],
+		"supports" => ["title", "page-attributes"],
 		"show_in_graphql" => false,
 	];
 
-	register_post_type( "animal", $args );
+	register_post_type("animal", $args);
 }
 
-add_action( 'init', 'cptui_register_my_cpts' );
-function cptui_register_my_taxes() {
+add_action('init', 'cptui_register_my_cpts');
+function cptui_register_my_taxes()
+{
 
 	/**
 	 * Taxonomy: villes.
 	 */
 
 	$labels = [
-		"name" => esc_html__( "villes", "custom-post-type-ui" ),
-		"singular_name" => esc_html__( "ville", "custom-post-type-ui" ),
+		"name" => esc_html__("villes", "custom-post-type-ui"),
+		"singular_name" => esc_html__("ville", "custom-post-type-ui"),
 	];
 
-	
+
 	$args = [
-		"label" => esc_html__( "villes", "custom-post-type-ui" ),
+		"label" => esc_html__("villes", "custom-post-type-ui"),
 		"labels" => $labels,
 		"public" => true,
 		"publicly_queryable" => true,
@@ -652,7 +654,7 @@ function cptui_register_my_taxes() {
 		"show_in_menu" => true,
 		"show_in_nav_menus" => true,
 		"query_var" => true,
-		"rewrite" => [ 'slug' => 'ville', 'with_front' => true, ],
+		"rewrite" => ['slug' => 'ville', 'with_front' => true,],
 		"show_admin_column" => false,
 		"show_in_rest" => true,
 		"show_tagcloud" => false,
@@ -663,20 +665,20 @@ function cptui_register_my_taxes() {
 		"sort" => false,
 		"show_in_graphql" => false,
 	];
-	register_taxonomy( "ville", [ "animal" ], $args );
+	register_taxonomy("ville", ["animal"], $args);
 
 	/**
 	 * Taxonomy: genre animaux.
 	 */
 
 	$labels = [
-		"name" => esc_html__( "genre animaux", "custom-post-type-ui" ),
-		"singular_name" => esc_html__( "genre animal", "custom-post-type-ui" ),
+		"name" => esc_html__("genre animaux", "custom-post-type-ui"),
+		"singular_name" => esc_html__("genre animal", "custom-post-type-ui"),
 	];
 
-	
+
 	$args = [
-		"label" => esc_html__( "genre animaux", "custom-post-type-ui" ),
+		"label" => esc_html__("genre animaux", "custom-post-type-ui"),
 		"labels" => $labels,
 		"public" => true,
 		"publicly_queryable" => true,
@@ -685,7 +687,7 @@ function cptui_register_my_taxes() {
 		"show_in_menu" => true,
 		"show_in_nav_menus" => true,
 		"query_var" => true,
-		"rewrite" => [ 'slug' => 'genre_animal', 'with_front' => true, ],
+		"rewrite" => ['slug' => 'genre_animal', 'with_front' => true,],
 		"show_admin_column" => false,
 		"show_in_rest" => true,
 		"show_tagcloud" => false,
@@ -696,6 +698,6 @@ function cptui_register_my_taxes() {
 		"sort" => false,
 		"show_in_graphql" => false,
 	];
-	register_taxonomy( "genre_animal", [ "animal" ], $args );
+	register_taxonomy("genre_animal", ["animal"], $args);
 }
-add_action( 'init', 'cptui_register_my_taxes' );
+add_action('init', 'cptui_register_my_taxes');
